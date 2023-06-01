@@ -381,13 +381,13 @@ function startTimerLine(time) {
     var t = 52;
 
     if (w<350) {
-        t = 86;   
+        t = 89;   
     }
     else if (w < 420) {
-        t = 75;
+        t = 77;
     }
     else if (w < 570) {
-        t = 55;
+        t = 57;
     }
     else if (w < 820) {
         t = 62;
@@ -396,9 +396,9 @@ function startTimerLine(time) {
     function timer() {
         time += 1; //upgrading time value with 1
         time_line.style.width = time + "px"; //increasing width of time_line with px by time value
-        // if (time<0) {
-        //     clearInterval(counterLine);
-        // }
+        if (time > 596) {
+            clearInterval(counterLine); //clear counterLine
+        }
     }
 }
 

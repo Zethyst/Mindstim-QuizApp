@@ -1243,6 +1243,9 @@ a {
     height: 45px;
     text-align: center;
   }
+  .option_list .option .icon{
+    right: 15%;
+  }
   .site-footer {
     height: 80px;
   }
