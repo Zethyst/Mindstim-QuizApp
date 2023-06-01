@@ -386,7 +386,7 @@ function startTimerLine(time) {
     }
     else if (w < 380) {
         alert("reached 380 is correct")
-        t = 90;
+        t = 100;
     }
     else if (w < 550) {
         alert("reached 550 is correct")
