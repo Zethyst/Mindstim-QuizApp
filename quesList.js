@@ -1,29 +1,28 @@
 const quizArr = [
-    // {
-    //     question:"What is the 6<sup>th</sup> planet in the solar system?",
-    //     opt1:"Jupiter",
-    //     opt2:"Saturn",
-    //     opt3:"Earth",
-    //     opt4:"Neptune",
-    //     answer:"Saturn"
-    // }
-    // },
-    // {
-    //     question:"What was the first product launched by Apple?",
-    //     opt1:"iPhone",
-    //     opt2:"iPad",
-    //     opt3:"Apple-1",
-    //     opt4:"iPod",
-    //     answer:"Apple-1"
-    // },
-    // {
-    //     question:"According to legends, what do vampires drink?",
-    //     opt1:"Blood",
-    //     opt2:"Elixir",
-    //     opt3:"Milk",
-    //     opt4:"Water",
-    //     answer:"Blood"
-    // },
+    {
+        question:"What is the 6<sup>th</sup> planet in the solar system?",
+        opt1:"Jupiter",
+        opt2:"Saturn",
+        opt3:"Earth",
+        opt4:"Neptune",
+        answer:"Saturn"
+    },
+    {
+        question:"What was the first product launched by Apple?",
+        opt1:"iPhone",
+        opt2:"iPad",
+        opt3:"Apple-1",
+        opt4:"iPod",
+        answer:"Apple-1"
+    },
+    {
+        question:"According to legends, what do vampires drink?",
+        opt1:"Blood",
+        opt2:"Elixir",
+        opt3:"Milk",
+        opt4:"Water",
+        answer:"Blood"
+    },
     {
         question:"Santa Claus is usually pictured in a suit consisting of which two colors?",
         opt1:"Green & white",
