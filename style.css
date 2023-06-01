@@ -194,9 +194,9 @@ body {
 .quizcontainer {
   background: #181c248e;
   width: 700px;
-  height: 400px;
+  height: 420px;
   padding: 18px 16px;
-  margin: 4px;
+  margin: 6px;
   /* color: white; */
   border-radius: 10px;
   display: flex;
@@ -206,7 +206,7 @@ body {
 }
 .question {
   color: #f59e0b;
-  padding: 15px;
+  padding: 12px;
   margin-bottom: 2px;
   user-select: none;
   font-size: 1.3rem;
@@ -229,7 +229,7 @@ body {
   border-radius: 12px;
   cursor: pointer;
   width: 400px;
-  height: 45px;
+  height: 43px;
 }
 .option:last-child {
   margin-bottom: 20px;
