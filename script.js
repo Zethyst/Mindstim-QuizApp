@@ -251,7 +251,7 @@ function optionSelected(answer) {
         scorePoints += que_numb * 10 * timeValue;
         scoreGreen.innerHTML = "+" + que_numb * 10 * timeValue;
         scoreBoxGreen.classList.remove("hidden");
-       var greenTimeout= setTimeout(() => {
+        var greenTimeout = setTimeout(() => {
             if (!scoreBoxGreen.classList.contains("hidden")) {
                 scoreBoxGreen.classList.add("hidden");
             }
@@ -267,7 +267,7 @@ function optionSelected(answer) {
         scorePoints -= 5 * timeValue;
         scoreRed.innerHTML = "-" + que_numb * 5 * timeValue;
         scoreBoxRed.classList.remove("hidden");
-        var redTimeout=setTimeout(() => {
+        var redTimeout = setTimeout(() => {
             if (!scoreBoxRed.classList.contains("hidden")) {
                 scoreBoxRed.classList.add("hidden");
             }
@@ -297,12 +297,12 @@ function optionSelected(answer) {
     scoreBoxContainer.addEventListener("animationend", (e) => {
         scoreBoxContainer.classList.remove("slideInUp");
     })
-    var popTimeout=setTimeout(() => {
+    var popTimeout = setTimeout(() => {
         if (!scoreBoxContainer.classList.contains("slideInUp")) {
             scoreBoxContainer.classList.add("slideInDown");
         }
     }, 3000);
-    var pop=setTimeout(() => {
+    var pop = setTimeout(() => {
         scoreCard.classList.add("hidden");
         scoreBoxContainer.classList.remove("slideInDown");
     }, 4000);
@@ -378,25 +378,38 @@ function startTimer(time) {
 
 function startTimerLine(time) {
     var w = window.innerWidth;
-    var t = 52;
+    var t = 45;
 
-    if (w<350) {
-        t = 89;   
+    if (w < 325) {
+        console.log("reached 325 is correct")
+        t = 120;
     }
-    else if (w < 420) {
-        t = 77;
+    else if (w < 380) {
+        console.log("reached 380 is correct")
+        t = 90;
     }
-    else if (w < 570) {
-        t = 57;
+    else if (w < 550) {
+        console.log("reached 550 is correct")
+        t = 66;
     }
-    else if (w < 820) {
-        t = 62;
+    else if (w < 800) {
+        console.log("reached 800 is fast")
+        t = 49;
     }
     counterLine = setInterval(timer, t);
     function timer() {
         time += 1; //upgrading time value with 1
         time_line.style.width = time + "px"; //increasing width of time_line with px by time value
-        if (time > 596) {
+        if (time > 236 && t == 120) {
+            clearInterval(counterLine); //clear counterLine
+        }
+        if (time > 276 && t == 90) {
+            clearInterval(counterLine); //clear counterLine
+        }
+        if (time > 376 && t == 66) {
+            clearInterval(counterLine); //clear counterLine
+        }
+        if (time > 596 && t == 45) {
             clearInterval(counterLine); //clear counterLine
         }
     }
