@@ -194,7 +194,7 @@ body {
 .quizcontainer {
   background: #181c248e;
   width: 700px;
-  height: 450px;
+  height: 420px;
   padding: 18px 16px;
   margin: 4px;
   /* color: white; */
@@ -340,7 +340,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 140px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .quiz_box header .timer .time_left_txt {
