@@ -390,7 +390,8 @@ function startTimerLine(time) {
     }
     else if (w < 550) {
         alert("reached 550 is correct")
-        t = 66;
+        t = 75;
+        // t = 66;
     }
     else if (w < 800) {
         console.log("reached 800 is fast")
