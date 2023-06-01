@@ -1008,8 +1008,6 @@ a {
   letter-spacing: 3px;
 }
 
-@media screen and (max-width: 1300px) {
-}
 
 @media screen and (max-width: 1070px) {
   .quizcontainer {
@@ -1230,6 +1228,12 @@ a {
   }
   .answer_text {
     font-size:9px;
+  }
+  .scoreGreen{
+    font-size: 20px;
+  }
+  .scoreRed{
+    font-size: 20px;
   }
   .result_box{
     height: 705px;
