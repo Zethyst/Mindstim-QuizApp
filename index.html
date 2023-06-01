@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="yellow">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Mindstim</title>
+  
+      <!-- Tailwind Elements styles-->
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+  
+      <!-- Tailwind CSS config -->
+      <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+      <script>
+        tailwind.config = {
+          darkMode: "class",
+          content: [
+    './pages/**/*.{html,js}',
+    './components/**/*.{html,js}',
+    "/tw-elements/dist/js/**/*.js"
+         ],
+          theme: {
+            fontFamily: {
+              sans: ["Roboto", "sans-serif"],
+              body: ["Roboto", "sans-serif"],
+              mono: ["ui-monospace", "monospace"],
+            },
+            safelist: ['animate-[slide-in-up_1s_ease-in-out]']
+          },
+          corePlugins: {
+            preflight: false,
+          },
+          plugins: [require("/tw-elements/dist/plugin.cjs")],
+        };
+      </script>
+  
+</head>
+<body>
+    <!-- Sound -->
+    <audio id="Green-Sound">
+        <source src="/Assets/Green-Sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    <audio id="Red-Sound">
+        <source src="/Assets/Red-Sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    <audio id="Count-Sound">
+        <source src="/Assets/count.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    <audio id="Go-Sound">
+        <source src="/Assets/Go.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    <audio id="Blank-Sound">
+        <source src="/Assets/Blank_Sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+<!-- Banner -->
+      <div class="banner">
+        <div class="display">
+          <div id="bannername"><span>Mind</span>stim</div>
+        </div>
+      </div>
+
+    <!-- start Quiz button -->
+        <div class="start_btn shadow-xl" ><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box hidden">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answers.</div>
+            <div class="info">6. The more quicker you select, the more points you get.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    <!-- Countdown Timer -->
+        <div class="countdown-timer hidden"><span class="zoom-in-zoom-out" id="three">3</span></div>
+        <div class="countdown-timer hidden"><span class="zoom-in-zoom-out" id="two">2</span></div>
+        <div class="countdown-timer hidden"><span class="zoom-in-zoom-out" id="one">1</span></div>
+        <div class="countdown-timer hidden"><span class="zoom-in-zoom-out" id="go">Go</span></div>
+    <!-- Shutter -->
+    <div class="halfShutterUp slideInUpShutter hidden"></div>
+    <div class="halfShutterDown slideInDown hidden"></div>
+    <!-- Quiz Box -->
+    <div class="time_line_container fadeIn hidden">
+        <div class="time_line"></div>
+        <div class="icon clock"><span class="material-icons">alarm</span></div>
+    </div>
+    <div class="quizcontainer shadow-xl fadeIn quiz_box hidden">
+        <header>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+        </header>
+        <h2 class="question que_text">1. What is the 6<sup>th</sup> planet in the solar system</h2>
+        <div id="quiz-wrapper" class="option_list" >
+            <!-- <div class="option answer" id="opt1" onclick="clicked('#opt1')">Jupiter</div> -->
+            <div class="option answer" id="opt1" >Jupiter</div>
+            <div class="option answer" id="opt2" >Saturn</div>
+            <div class="option answer" id="opt3" >Earth</div>
+            <div class="option answer" id="opt4">Neptune</div>
+        </div>
+        <footer>
+            <div class="total_que">
+              
+            </div>
+            <div class="hidden" id="next"><button class="next_btn bg-purple-800 hover:bg-purple-900 shadow-lg transition duration-100" id="submit">Next Question</button>
+            </div>
+        </footer>
+        
+    </div>
+    <!-- Results Box -->
+    <div class="hidden" id="final">
+        <div id="result" class="result_box">
+        <div class="icon">
+           <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You have completed the quiz</div>
+        <div class="score_text">
+            <!-- <p>Hello</p> -->
+        </div>
+        <div class="accuracy-bar-wrapper">
+            <label for="accuracy-label">Accuracy</label>
+            <div class="accuracy-bar">
+                <div class="accuracy-success-fill"></div>
+                <div class="accuracy-danger-fill"></div>
+                <div class="accuracy-label-tooltip animated fadeInUp anim-400-duration">
+                    <div class="tooltiptext">68%</div>
+                </div>
+            </div>
+        </div>
+        <div class="score-wrapper fadeIn ">
+            <label for="score" class="title">YOUR SCORE</label>
+                <div class="score-total"><span id="score" style="color:green;"></span>/
+                    <span class="totalque"></span>
+                </div>
+        </div>
+        <div class="coins-wrapper fadeIn ">
+            <label for="coins" class="title" id="earn_lose">EARNED COINS</label>
+            <div class="pointsContainer">
+                <div class="coinimage"><span class="material-icons" style="color:#ffd700">monetization_on</span></div>
+                <div class="pointstext">500</div>
+            </div>
+        </div>
+        <div class="stats-wrapper animated fadeInUp anim-400-duration">
+            <label for="stats" class="title">Performance Stats</label>
+            <div class="stat-container">
+                <div class="stat-box stat-box-correct">
+                    <div class="bgimage"></div>
+                    <div class="value">10</div>
+                    <label for="correct">Correct</label>
+                </div>
+                <div class=" stat-box stat-box-incorrect">
+                    <div class="bgimage"></div>
+                    <div class="value">7</div>
+                    <label for="correct">Incorrect</label>
+                </div>
+                <div class="stat-box stat-box-unattempted">
+                    <div class="bgimage"></div>
+                    <div class="value">2</div>
+                    <label for="correct">Unattempted</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons animated">
+           <button class="restart">Replay</button>
+           <button class="quit">Quit</button>
+        </div> 
+        </div> 
+    </div>
+    <div class="hidden" id="ScoreCard">
+        <div class="transform duration-500" id="popup">
+            <div class="scoreContainerGreen hidden"><p class="answer_text">Answer Points</p><p class="scoreGreen">+1030</p></div>
+            <div class="scoreContainerRed hidden"><p class="answer_text">Incorrect Answer</p><p class="scoreRed">-600</p></div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="footerContainer">
+            <span>Made With <i class="fa fa-heart pulse"></i> By <a href="https://www.instagram.com/scyp77/" target="_blank">Akshat</a></span>
+        </div>
+    </footer>
+    <script src="quesList.js"></script>
+    <script src="script.js"></script>
+     <!-- <script src="https://kit.fontawesome.com/e822fa5c46.js" crossorigin="anonymous"></script> -->
+</body>
+</html>
