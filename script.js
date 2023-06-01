@@ -381,15 +381,15 @@ function startTimerLine(time) {
     var t = 45;
 
     if (w < 325) {
-        alert("reached 325 is correct")
-        t = 135;
+        console.log("reached 325 is correct")
+        t = 130;
     }
     else if (w < 380) {
-        alert("reached 380 is correct")
+        console.log("reached 380 is correct")
         t = 110;
     }
     else if (w < 550) {
-        alert("reached 550 is correct")
+        console.log("reached 550 is correct")
         t = 75;
         // t = 66;
     }
