@@ -194,7 +194,7 @@ body {
 .quizcontainer {
   background: #181c248e;
   width: 700px;
-  height: 420px;
+  height: 400px;
   padding: 18px 16px;
   margin: 4px;
   /* color: white; */
@@ -478,7 +478,7 @@ footer button.hide {
   display: flex;
   padding: 25px 30px;
   height: 650px;
-  width: 450px;
+  width: 430px;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -488,7 +488,7 @@ footer button.hide {
 }
 
 .result_box .icon {
-  font-size: 75px;
+  font-size: 70px;
   color: gold;
   transform: translate(0px, 0px);
 }
@@ -602,7 +602,7 @@ footer button.hide {
 }
 .score-wrapper {
   background-color: #00000000;
-  padding: 8px 16px 6px;
+  padding: 4px 16px 6px;
   border-radius: 16px;
   width: 90%;
   transform: translate(0px, 0px);
@@ -627,7 +627,7 @@ footer button.hide {
   background-color: #00000000;
   border: 0;
   outline: 0;
-  padding: 6px 16px 8px;
+  padding: 3px 16px 6px;
   border-radius: 16px;
   width: 90%;
   transform: translate(0px, 0px);
