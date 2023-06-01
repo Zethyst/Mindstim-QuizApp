@@ -8,6 +8,14 @@ const quizArr = [
         answer:"Saturn"
     },
     {
+        question:"Who won the FIFA World Cup in 2018?",
+        opt1:"France",
+        opt2:"Brazil",
+        opt3:"Germany",
+        opt4:"Argentina",
+        answer:"France"
+    },
+    {
         question:"What was the first product launched by Apple?",
         opt1:"iPhone",
         opt2:"iPad",
@@ -24,12 +32,12 @@ const quizArr = [
         answer:"Blood"
     },
     {
-        question:"Santa Claus is usually pictured in a suit consisting of which two colors?",
-        opt1:"Green & white",
-        opt2:"Red & white",
-        opt3:"Black & white",
-        opt4:"Blue & white",
-        answer:"Red & white"
+        question:"Which country is home to the tallest mountain in the world, Mount Everest?",
+        opt1:"Nepal",
+        opt2:"China",
+        opt3:"India",
+        opt4:"Japan",
+        answer:"Nepal"
     },
     {
         question:"Who is Batman's crime-fighting assistant?",
@@ -48,12 +56,12 @@ const quizArr = [
         answer:"Tarzan"
     },
     {
-        question:"The racquet of which of these games does not have a net or strings in it?",
-        opt1:"Squash",
-        opt2:"Tennis",
+        question:"What is the chemical symbol for the element Iron?",
+        opt1:"Fe",
+        opt2:"Ir",
         opt3:"Badminton",
-        opt4:"Table Tennis",
-        answer:"Table Tennis"
+        opt4:"In",
+        answer:"Io"
     },
     {
         question:"Which of these legendary characters released a genie by rubbing a magical lamp?",
@@ -96,14 +104,6 @@ const quizArr = [
         answer:"Space Telescope"
     },
     {
-        question:"Which of these alcoholic drinks originated in Mexico?",
-        opt1:"Tequila",
-        opt2:"Martini",
-        opt3:"Sake",
-        opt4:"Bloody Mary",
-        answer:"Tequila"
-    },
-    {
         question:"After which Greek Goddess is the US space program to land the first woman and next man on the Moon by 2024 named?",
         opt1:"Rhea",
         opt2:"Nemesis",
@@ -113,7 +113,7 @@ const quizArr = [
     },
     {
         question:"In 2019, which telescope captured the first-ever Black Hole image?",
-        opt1:"James Webb Space Telescope",
+        opt1:"James Webb Telescope",
         opt2:"Event Horizon Telescope",
         opt3:"Hubble Space Telescope",
         opt4:"Spitzer Space Telescope",

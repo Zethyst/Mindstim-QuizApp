@@ -135,11 +135,11 @@ continue_btn.onclick = () => {
         time_line_container.classList.toggle("hidden");
         loadQuestion(queIndex); //calling showQestions function
         queCounter(1); //passing 1 parameter to queCounter
-        startTimer(15); //calling startTimer function
+        startTimer(30); //calling startTimer function
         startTimerLine(0); //calling startTimerLine function
     }, 5000)
 }
-let timeValue = 15;
+let timeValue = 30;
 var que_count = 0;
 var que_numb = 1;
 var userScore = 0;
@@ -162,7 +162,7 @@ restart_quiz.onclick = () => {
     quiz_box.classList.toggle("hidden"); //show quiz box
     time_line_container.classList.toggle("hidden");
     finalShow.classList.toggle("hidden"); //hide result box
-    let timeValue = 15;
+    let timeValue = 30;
     let counter;
     let counterLine;
     let widthValue = 0;
@@ -330,12 +330,12 @@ function showResult() {
     time_line_container.classList.toggle("hidden");
     finalShow.classList.toggle("hidden"); //show result box
     const scoreText = result_box.querySelector(".score_text");
-    if (userScore > 3) { // if user scored more than 3
+    if (userScore > 10) { // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
         let scoreTag = '<span>and congrats! 🎉, You got <p>' + userScore + '</p> out of <p>' + quizArr.length + '</p></span>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
     }
-    else if (userScore > 1) { // if user scored more than 1
+    else if (userScore > 5) { // if user scored more than 1
         let scoreTag = '<span>and nice 😎, You got <p>' + userScore + '</p> out of <p>' + quizArr.length + '</p></span>';
         scoreText.innerHTML = scoreTag;
     }
@@ -357,6 +357,7 @@ function startTimer(time) {
         }
         if (time < 0) { //if timer is less than 0
             clearInterval(counter); //clear counter
+            clearInterval(counterLine);
             unattempted += 1;
             timeText.textContent = "Time Off"; //change the time text to time off
             const allOptionslen = option_list.children.length; //getting all option items
@@ -378,26 +379,26 @@ function startTimer(time) {
 
 function startTimerLine(time) {
     var w = window.innerWidth;
-    var t = 26.5;
+    var t = 52;
 
     if (w<350) {
-        t = 57.5;   
+        t = 131;   
     }
-    else if (w < 400) {
-        t = 50.5;
+    else if (w < 420) {
+        t = 110;
     }
-    else if (w < 550) {
-        t = 36;
+    else if (w < 570) {
+        t = 81;
     }
-    else if (w < 800) {
-        t = 30.5;
+    else if (w < 820) {
+        t = 62;
     }
-    counterLine = setInterval(timer, t);
+    var counterLine = setInterval(timer, t);
     function timer() {
         time += 1; //upgrading time value with 1
         time_line.style.width = time + "px"; //increasing width of time_line with px by time value
-        if (time > 596) { //if time value is greater than 549
-            clearInterval(counterLine); //clear counterLine
+        if (time<0) {
+            clearInterval(counterLine);
         }
     }
 }
