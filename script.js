@@ -378,7 +378,7 @@ function startTimer(time) {
 
 function startTimerLine(time) {
     var w = window.innerWidth;
-    var t = 45;
+    var t = 51;
 
     if (w < 325) {
         console.log("reached 325 is correct")
