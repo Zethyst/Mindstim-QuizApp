@@ -357,7 +357,6 @@ function startTimer(time) {
         }
         if (time < 0) { //if timer is less than 0
             clearInterval(counter); //clear counter
-            clearInterval(counterLine);
             unattempted += 1;
             timeText.textContent = "Time Off"; //change the time text to time off
             const allOptionslen = option_list.children.length; //getting all option items
@@ -382,24 +381,24 @@ function startTimerLine(time) {
     var t = 52;
 
     if (w<350) {
-        t = 131;   
+        t = 86;   
     }
     else if (w < 420) {
-        t = 110;
+        t = 75;
     }
     else if (w < 570) {
-        t = 81;
+        t = 55;
     }
     else if (w < 820) {
         t = 62;
     }
-    var counterLine = setInterval(timer, t);
+    counterLine = setInterval(timer, t);
     function timer() {
         time += 1; //upgrading time value with 1
         time_line.style.width = time + "px"; //increasing width of time_line with px by time value
-        if (time<0) {
-            clearInterval(counterLine);
-        }
+        // if (time<0) {
+        //     clearInterval(counterLine);
+        // }
     }
 }
 
