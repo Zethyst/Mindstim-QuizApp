@@ -6,9 +6,9 @@
 
 <h3>📌 Key Feature:</h3>
 <dl>
-<dt>Diverse Quiz Categories:</dt><dd> Explore a multitude of quiz categories, including general knowledge, science, history, sports, entertainment, and more. QuizApp offers a vast array of topics to cater to a broad audience.</dd>
+<dt>Diverse Quiz Categories:</dt><dd> Explore a multitude of quiz categories, including general knowledge, science, history, sports, entertainment, and more. Mindstim offers a vast array of topics to cater to a broad audience.</dd>
 
-<dt>Responsive Design:</dt><dd> Enjoy a seamless quiz experience across various devices, including desktops, tablets, and mobile phones. QuizApp adapts to different screen sizes, ensuring accessibility and usability for all users.</dd>
+<dt>Responsive Design:</dt><dd> Enjoy a seamless quiz experience across various devices, including desktops, tablets, and mobile phones. Mindstim adapts to different screen sizes, ensuring accessibility and usability for all users.</dd>
 
 </dl>
 <h3>📌 Technology Stack:</h3>
