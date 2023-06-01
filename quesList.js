@@ -59,9 +59,9 @@ const quizArr = [
         question:"What is the chemical symbol for the element Iron?",
         opt1:"Fe",
         opt2:"Ir",
-        opt3:"Badminton",
-        opt4:"In",
-        answer:"Io"
+        opt3:"In",
+        opt4:"Io",
+        answer:"Fe"
     },
     {
         question:"Which of these legendary characters released a genie by rubbing a magical lamp?",
