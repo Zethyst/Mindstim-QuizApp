@@ -80,11 +80,9 @@ body {
 
 .info_box {
   width: 640px;
-  height: 420px;
+  height: 400px;
   background: #181c24;
   border-radius: 5px;
-  /* transform: translate(-50%, -50%) scale(0.9); */
-  /* pointer-events: none; */
   transition: all 0.3s ease;
 }
 
@@ -98,21 +96,21 @@ body {
   justify-content: center;
   padding: 0 30px;
   border-radius: 5px 5px 0 0;
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 700;
   letter-spacing: 2px;
   user-select: none;
 }
 
 .info_box .info-list {
-  padding: 15px 30px;
+  padding: 15px 70px;
   user-select: none;
 }
 
 .info_box .info-list .info {
   color: whitesmoke;
   margin: 7px 0;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .info_box .info-list .info span {
@@ -195,7 +193,8 @@ body {
 
 .quizcontainer {
   background: #181c248e;
-  width: 800px;
+  width: 700px;
+  height: 460px;
   padding: 18px 16px;
   margin: 4px;
   /* color: white; */
@@ -207,12 +206,13 @@ body {
 }
 .question {
   color: #f59e0b;
-  padding: 30px;
+  padding: 15px;
   margin-bottom: 2px;
   user-select: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 2rem;
   font-weight: 600;
+  text-align: center;
 }
 .option {
   font-size: 1.2rem; /* 24px */
@@ -229,7 +229,7 @@ body {
   border-radius: 12px;
   cursor: pointer;
   width: 400px;
-  height: 50px;
+  height: 45px;
 }
 .option:last-child {
   margin-bottom: 20px;
@@ -242,9 +242,9 @@ body {
 }
 #submit {
   padding: 20px;
-  margin-top: 10px;
+  margin: 10px 0;
   width: 200px;
-  height: 50px;
+  height: 45px;
   color: white;
   font-size: 1.2rem;
   font-weight: 700;
@@ -320,7 +320,7 @@ body {
   position: relative;
   width: 100%;
   z-index: 2;
-  height: 70px;
+  height: 60px;
   padding: 0 30px;
   border-radius: 5px 5px 0 0;
   border-bottom: 2px solid rgba(211, 211, 211, 0.466);
@@ -333,23 +333,24 @@ body {
 .quiz_box header .timer {
   color: #004085;
   background: #f59e0b;
-  height: 50px;
+  height: 40px;
   padding: 0 8px;
   border-radius: 7px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 145px;
+  width: 140px;
+  margin-bottom: 8px;
 }
 
 .quiz_box header .timer .time_left_txt {
   font-weight: 600;
-  font-size: 17px;
+  font-size: 16px;
   user-select: none;
 }
 
 .quiz_box header .timer .timer_sec {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 550;
   height: 30px;
   width: 45px;
@@ -369,7 +370,7 @@ body {
   margin: 20px auto;
   border-radius: 20px;
   overflow: hidden;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .clock {
   position: absolute;
@@ -476,7 +477,7 @@ footer button.hide {
   border-radius: 8px;
   display: flex;
   padding: 25px 30px;
-  height: 775px;
+  height: 650px;
   width: 450px;
   align-items: center;
   flex-direction: column;
@@ -487,22 +488,22 @@ footer button.hide {
 }
 
 .result_box .icon {
-  font-size: 100px;
+  font-size: 75px;
   color: gold;
-  transform: translate(0px, -10px);
+  transform: translate(0px, 0px);
 }
 
 .result_box .complete_text {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 500;
-  transform: translate(0px, -25px);
+  transform: translate(0px, -20px);
 }
 .result_box .score_text span {
   display: flex;
   margin: 10px 0;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 500;
-  transform: translate(0px, -25px);
+  transform: translate(0px, -20px);
 }
 
 .result_box .score_text span p {
@@ -511,7 +512,7 @@ footer button.hide {
 }
 .accuracy-bar-wrapper {
   background-color: #000000b6;
-  padding: 10px 16px 16px;
+  padding: 3px 16px 8px;
   border-radius: 16px;
   width: 90%;
   transform: translate(0px, -13px);
@@ -519,13 +520,14 @@ footer button.hide {
 .accuracy-label {
   color: whitesmoke;
   font-weight: 600;
+  font-size: 8px;
   font-family: "Quicksand", sans-serif;
 }
 .accuracy-bar {
-  height: 12px;
-  margin-bottom: 2px;
+  height: 8px;
+  margin-bottom: 3px;
   position: relative;
-  margin-top: 8px;
+  margin-top: 6px;
   position: relative;
 }
 .accuracy-success-fill {
@@ -534,7 +536,7 @@ footer button.hide {
   left: 0;
   /* width: 99%; */
   /* width: calc(100% -2px); */
-  height: 16px;
+  height: 12px;
   border-radius: 8px 0 0 8px;
   background-color: #00c985;
   -webkit-transition: width 0.2s ease-in-out;
@@ -545,7 +547,7 @@ footer button.hide {
   top: 0;
   right: 0;
   width: 100px;
-  height: 16px;
+  height: 12px;
   border-radius: 0 8px 8px 0;
   background-color: #ef3c69;
   -webkit-transition: width 0.2s ease-in-out;
@@ -559,7 +561,7 @@ footer button.hide {
   padding: 5px 3px;
   position: absolute;
   width: 40px;
-  height: 25px;
+  height: 20px;
   top: -5px;
   background: #ffffff;
   border-radius: 8px;
@@ -571,10 +573,10 @@ footer button.hide {
   position: relative;
   margin: auto;
   width: 30px;
-  height: 15px;
+  height: 10px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 15px;
+  line-height: 10px;
   color: #292a3a;
 }
 
@@ -600,7 +602,7 @@ footer button.hide {
 }
 .score-wrapper {
   background-color: #00000000;
-  padding: 12px 16px 8px;
+  padding: 8px 16px 6px;
   border-radius: 16px;
   width: 90%;
   transform: translate(0px, 0px);
@@ -610,13 +612,13 @@ footer button.hide {
   align-items: center;
 }
 .score-wrapper .title {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 600;
   color: #ffffffa8;
   letter-spacing: 3px;
 }
 .score-total {
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 700;
   color: #ffffffea;
   letter-spacing: 5px;
@@ -625,7 +627,7 @@ footer button.hide {
   background-color: #00000000;
   border: 0;
   outline: 0;
-  padding: 8px 16px 12px;
+  padding: 6px 16px 8px;
   border-radius: 16px;
   width: 90%;
   transform: translate(0px, 0px);
@@ -635,13 +637,13 @@ footer button.hide {
   align-items: center;
 }
 .coins-wrapper .title {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 600;
   color: #ffffffa8;
   letter-spacing: 3px;
 }
 .pointstext {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   color: #ffffffea;
   letter-spacing: 1px;
@@ -673,7 +675,7 @@ footer button.hide {
   display: inline-block;
   vertical-align: top;
   /* width: calc(33.33% - 16px); */
-  width: 160px;
+  width: 150px;
   height: 76px;
   border-radius: 8px;
   padding: 6px 0;
@@ -711,7 +713,7 @@ footer button.hide {
   display: inline-block;
   vertical-align: top;
   /* width: calc(33.33% - 16px); */
-  width: 160px;
+  width: 150px;
   height: 76px;
   border-radius: 8px;
   padding: 6px 0;
@@ -784,7 +786,7 @@ footer button.hide {
 .result_box .buttons {
   display: flex;
   margin: 20px 0;
-  transform: translate(0px, 5px);
+  transform: translate(0px, 0px);
 }
 
 .result_box .buttons button {
@@ -836,7 +838,7 @@ footer button.hide {
   transform: scale(1.06);
 }
 #popup {
-  height: 90px;
+  height: 75px;
   width: 100%;
   position: absolute;
   bottom: 0px;
@@ -916,7 +918,7 @@ footer button.hide {
 }
 .answer_text {
   transform: translate(2px, 2px);
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 600;
   font-family: "Quicksand", sans-serif;
 }
@@ -927,8 +929,8 @@ footer button.hide {
   flex-direction: column;
   justify-content: center;
   border-radius: 12px;
-  width: 140px;
-  height: 70px;
+  width: 130px;
+  height: 60px;
   color: green;
   background-image: url(/Assets/Green\ Check.jpg);
   background-size: 40px;
@@ -939,7 +941,7 @@ footer button.hide {
   background-position-y: center;
 }
 .scoreGreen {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 600;
   color: #00a06a;
 }
@@ -950,8 +952,8 @@ footer button.hide {
   flex-direction: column;
   justify-content: center;
   border-radius: 12px;
-  width: 150px;
-  height: 70px;
+  width: 140px;
+  height: 60px;
   color: red;
   background-image: url(/Assets/Red\ Cross.jpg);
   background-size: 40px;
@@ -962,7 +964,7 @@ footer button.hide {
   background-position-y: center;
 }
 .scoreRed {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 600;
   color: #bc0835;
 }
@@ -974,7 +976,7 @@ footer button.hide {
   font-size: 18px;
   color: rgb(209, 203, 203);
   width: 100%;
-  height: 100px;
+  height: 90px;
   border: 0;
 }
 .footerContainer {
@@ -1434,7 +1436,7 @@ a {
 
   .quizcontainer {
     width: 250px;
-    height: 450px;
+    height: 400px;
   }
   .quiz_box header .timer {
     display: none;
@@ -1455,6 +1457,7 @@ a {
   .question {
     padding: 5px;
     font-size: 0.85rem;
+    text-align: center;
   }
   #submit {
     height: 45px;

@@ -231,6 +231,10 @@ let crossIconTag = '<div class="icon cross"><i class="fas fa-times"></i></div>';
 function optionSelected(answer) {
     clearInterval(counter); //clear counter
     clearInterval(counterLine); //clear counterLine
+    clearTimeout(redTimeout);
+    clearTimeout(greenTimeout);
+    clearTimeout(popTimeout);
+    clearTimeout(pop);
     let userAns = answer.textContent; //getting user selected option
     let correcAns = quizArr[que_count].answer; //getting correct answer from array
     const allOptions = option_list.children.length; //getting all option items
@@ -247,7 +251,7 @@ function optionSelected(answer) {
         scorePoints += que_numb * 10 * timeValue;
         scoreGreen.innerHTML = "+" + que_numb * 10 * timeValue;
         scoreBoxGreen.classList.remove("hidden");
-        setTimeout(() => {
+       var greenTimeout= setTimeout(() => {
             if (!scoreBoxGreen.classList.contains("hidden")) {
                 scoreBoxGreen.classList.add("hidden");
             }
@@ -263,7 +267,7 @@ function optionSelected(answer) {
         scorePoints -= 5 * timeValue;
         scoreRed.innerHTML = "-" + que_numb * 5 * timeValue;
         scoreBoxRed.classList.remove("hidden");
-        setTimeout(() => {
+        var redTimeout=setTimeout(() => {
             if (!scoreBoxRed.classList.contains("hidden")) {
                 scoreBoxRed.classList.add("hidden");
             }
@@ -293,12 +297,12 @@ function optionSelected(answer) {
     scoreBoxContainer.addEventListener("animationend", (e) => {
         scoreBoxContainer.classList.remove("slideInUp");
     })
-    setTimeout(() => {
+    var popTimeout=setTimeout(() => {
         if (!scoreBoxContainer.classList.contains("slideInUp")) {
             scoreBoxContainer.classList.add("slideInDown");
         }
     }, 3000);
-    setTimeout(() => {
+    var pop=setTimeout(() => {
         scoreCard.classList.add("hidden");
         scoreBoxContainer.classList.remove("slideInDown");
     }, 4000);
