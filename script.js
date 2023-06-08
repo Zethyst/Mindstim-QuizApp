@@ -285,10 +285,11 @@ function optionSelected(answer) {
     for (i = 0; i < allOptions; i++) {
         option_list.children[i].classList.add("disabled"); //once user select an option then disabled all options
     }
+
     const allOptionslen = option_list.children.length; //getting all option items 
     for (i = 0; i < allOptionslen; i++) {
         if (option_list.children[i].textContent == quizArr[que_count].answer) { //if there is an option which is matched to an array answer
-            option_list.children[i].setAttribute("class", "option correct"); //adding green color to matched option
+            option_list.children[i].setAttribute("class", "option correct disabled"); //adding green color to matched option
             option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to matched option
         }
     }
@@ -363,7 +364,7 @@ function startTimer(time) {
             let correcAns = quizArr[que_count].answer; //getting correct answer from array
             for (i = 0; i < allOptionslen; i++) {
                 if (option_list.children[i].textContent == correcAns) { //if there is an option which is matched to an array answer
-                    option_list.children[i].setAttribute("class", "option correct"); //adding green color to matched option
+                    option_list.children[i].setAttribute("class", "option correct disabled"); //adding green color to matched option
                     option_list.children[i].insertAdjacentHTML("beforeend", tickIconTag); //adding tick icon to matched option
                     console.log("Time Off: Auto selected correct answer.");
                 }
