@@ -8,28 +8,44 @@ const quizArr = [
         answer:"Saturn"
     },
     {
-        question:"Who won the FIFA World Cup in 2018?",
-        opt1:"France",
-        opt2:"Brazil",
-        opt3:"Germany",
-        opt4:"Argentina",
-        answer:"France"
+        question:"The addition of which of these notes is of maximum value?",
+        opt1:"Four notes of Rs. 500",
+        opt2:"Thirty notes of Rs. 100",
+        opt3:"Ten notes of Rs. 50",
+        opt4:"One note of Rs. 2000",
+        answer:"Thirty notes of Rs. 100"
     },
     {
-        question:"What was the first product launched by Apple?",
-        opt1:"iPhone",
-        opt2:"iPad",
-        opt3:"Apple-1",
-        opt4:"iPod",
-        answer:"Apple-1"
+        question:"According to Hindu mythology, Ravana was a great devotee of which of these deities?",
+        opt1:"Lord Ganesh",
+        opt2:"Lord Indra",
+        opt3:"Lord Vishnu",
+        opt4:"Lord Shiva",
+        answer:"Lord Shiva"
     },
     {
-        question:"According to legends, what do vampires drink?",
-        opt1:"Blood",
-        opt2:"Elixir",
-        opt3:"Milk",
-        opt4:"Water",
-        answer:"Blood"
+        question:"What does the 'S' in SUV, a type of car, stand for?",
+        opt1:"Sport",
+        opt2:"Sense",
+        opt3:"Speed",
+        opt4:"Spirit",
+        answer:"Sport"
+    },
+    {
+        question:"In the context of light, if we mix all the seven colours of the rainbow, what would the resultant colour be?",
+        opt1:"White",
+        opt2:"Black",
+        opt3:"Maroon",
+        opt4:"Dark Blue",
+        answer:"White"
+    },
+    {
+        question:"Which of the following countries' flag does not have a star on it?",
+        opt1:"Australia",
+        opt2:"Belgium",
+        opt3:"New Zealand",
+        opt4:"China",
+        answer:"Belgium"
     },
     {
         question:"Which country is home to the tallest mountain in the world, Mount Everest?",
@@ -40,28 +56,28 @@ const quizArr = [
         answer:"Nepal"
     },
     {
-        question:"Who is Batman's crime-fighting assistant?",
-        opt1:"Selena",
-        opt2:"Robin",
-        opt3:"Harvey",
-        opt4:"Gordan",
-        answer:"Robin"
+        question:"Who, during his days in prison, wrote an essay titled 'Why i am Atheist'?",
+        opt1:"Bhagat Singh",
+        opt2:"Michael Madhusudan Dutt",
+        opt3:"Subhas Chandra Bose",
+        opt4:"Motilal Nehru",
+        answer:"Bhagat Singh"
     },
     {
-        question:"Which fictional character was raised by apes?",
-        opt1:"Mowgli",
-        opt2:"Tarzan",
-        opt3:"Harry Potter",
-        opt4:"You",
-        answer:"Tarzan"
+        question:"Which of these numbers features in the multiplication tables of both 3 and 9",
+        opt1:"24",
+        opt2:"30",
+        opt3:"39",
+        opt4:"18",
+        answer:"18"
     },
     {
-        question:"What is the chemical symbol for the element Iron?",
-        opt1:"Fe",
-        opt2:"Ir",
-        opt3:"In",
-        opt4:"Io",
-        answer:"Fe"
+        question:"The year mentioned in which of these Hindi film titles is a reference to the year of the Quit India Movement?",
+        opt1:"23rd March 1931: Shaheed",
+        opt2:"1920: Evil Returns",
+        opt3:"1942: A Love Story",
+        opt4:"Summer 2007",
+        answer:"1942: A Love Story"
     },
     {
         question:"Which of these legendary characters released a genie by rubbing a magical lamp?",
@@ -80,44 +96,67 @@ const quizArr = [
         answer:"Egyptians"
     },
     {
-        question:"In the world of computers and technology, what does the H in HTTP stand for?",
-        opt1:"High-Definition",
-        opt2:"Hyper",
-        opt3:"Heightened",
-        opt4:"Hypervisor",
-        answer:"Hyper"
+        question:"Which sacred Hindu scripture contains a collection of hymns and verses dedicated to various deities?",
+        opt1:"Ramayana",
+        opt2:"Bhagavad Gita",
+        opt3:"Upanishads",
+        opt4:"Rigveda",
+        answer:"Rigveda"
     },
     {
-        question:"Which term is used to describe a very good investment?",
-        opt1:"Potato Chip",
-        opt2:"Green Chip",
-        opt3:"Blue Chip",
-        opt4:"Wood Chip",
-        answer:"Blue Chip"
+        question:"Normally,with which of these does every sitting of the Indian Parliament start?",
+        opt1:"Zero hour",
+        opt2:"Question hour",
+        opt3:"Legislative business",
+        opt4:"Priviledge motion",
+        answer:"Question hour"
     },
     {
-        question:"What object launched by NASA was named after Edwin Hubble?",
-        opt1:"Satellite",
-        opt2:"Space Telescope",
-        opt3:"Space Shuttle",
-        opt4:"Image Sensor",
-        answer:"Space Telescope"
+        question:"Which of these animals gives its name to a road marking indicating a path for pedestrians to cross the road?",
+        opt1:"Tiger",
+        opt2:"Giraffe",
+        opt3:"Zebra",
+        opt4:"Vulture",
+        answer:"Zebra"
     },
     {
-        question:"After which Greek Goddess is the US space program to land the first woman and next man on the Moon by 2024 named?",
-        opt1:"Rhea",
-        opt2:"Nemesis",
-        opt3:"Aphrodite",
-        opt4:"Artemis",
-        answer:"Artemis"
+        question:"Which of these is not a web browser",
+        opt1:"Firefox",
+        opt2:"Opera",
+        opt3:"Facebook",
+        opt4:"Chrome",
+        answer:"Facebook"
     },
     {
-        question:"In 2019, which telescope captured the first-ever Black Hole image?",
-        opt1:"James Webb Telescope",
-        opt2:"Event Horizon Telescope",
-        opt3:"Hubble Space Telescope",
-        opt4:"Spitzer Space Telescope",
-        answer:"Event Horizon Telescope"
+        question:"If sangeeta is Amar's father's sister, what would be the relationship between Sangeeta and Amar?",
+        opt1:"Behen-Bhai",
+        opt2:"Chachi-Bhatija",
+        opt3:"Maami-Bhanja",
+        opt4:"Bua-Bhatija",
+        answer:"Bua-Bhatija"
+    },
+    {
+        question:" 'Commissioner', 'superintendent', and 'inspector' are ranks found in which of these?",
+        opt1:"Army",
+        opt2:"Police Force",
+        opt3:"Navy",
+        opt4:"Air Force",
+        answer:"Police Force"
+    },
+    {
+        question:"Various shades of green can be found in the logo of which Microsoft application?",
+        opt1:"Word",
+        opt2:"PowerPoint",
+        opt3:"Excel",
+        opt4:"Skype",
+        answer:"Excel"
+    },
+    {
+        question:"Which Indian president was the first ever Principal Scientific Advisor to the Government of India?",
+        opt1:"Pranab Mukherjee",
+        opt2:"Dr APJ Abdul Kalam",
+        opt3:"Ram Nath Kovind",
+        opt4:"Dr S Radhakrishnan",
+        answer:"Dr APJ Abdul Kalam"
     }
-
 ];
