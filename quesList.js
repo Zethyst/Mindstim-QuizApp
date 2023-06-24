@@ -120,12 +120,12 @@ const quizArr = [
         answer:"Zebra"
     },
     {
-        question:"Which of these is not a web browser",
-        opt1:"Firefox",
-        opt2:"Opera",
-        opt3:"Facebook",
-        opt4:"Chrome",
-        answer:"Facebook"
+        question:"Who among these is also known as Anjaneya and was born to Anjana?",
+        opt1:"Lord Krishna",
+        opt2:"Lord Hanuman",
+        opt3:"Karna",
+        opt4:"Bhishma",
+        answer:"Lord Hanuman"
     },
     {
         question:"If sangeeta is Amar's father's sister, what would be the relationship between Sangeeta and Amar?",
