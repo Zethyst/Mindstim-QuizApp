@@ -1394,9 +1394,10 @@ a {
   }
   #submit {
     height: 55px;
-    width: 100px;
+    width: 90px;
     font-size: 0.75rem;
     margin-left: 20px;
+    transform: translateY(10px);
   }
   footer .total_que span {
     font-size: 15px;
